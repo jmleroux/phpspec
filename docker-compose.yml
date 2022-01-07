@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+    php7.3:
+        build:
+            context: .
+            target: php-7-3
+        working_dir: /app
+        volumes:
+            - ./:/app
+
+    php7.4:
+        build:
+            context: .
+            target: php-7-4
+        working_dir: /app
+        volumes:
+            - ./:/app
+
+    php8.0:
+        build:
+            context: .
+            target: php-8-0
+        working_dir: /app
+        volumes:
+            - ./:/app
